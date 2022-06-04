@@ -8,10 +8,10 @@ function App() {
       <header>
         <h1>Counter App using State</h1>
       </header>
-      <h2>Current value of count is {count} </h2>
-      <button>Reset Counter</button>
-      <button>Increase Counter</button>
-      <button>Decrease Counter</button>
+      <h2>Current value of count is : {count} </h2>
+      <button onClick={() => setCount(0)}>Reset Counter</button>
+      <button onClick={() => setCount(count + 1)}>Increase Counter</button>
+      <button onClick={() => setCount(count - 1)}>Decrease Counter</button>
     </div>
   );
 }
